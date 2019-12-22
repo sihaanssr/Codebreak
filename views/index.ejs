@@ -40,7 +40,17 @@
       href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css"
       type="text/css"
     />
-    <div id="map"></div>
+
+    <div id="map">
+      <form action="http://localhost:5000/api/locate/dhundo" method="GET">
+        <button id="Search">
+          FInd Others Like Me
+        </button>
+      </form>
+      <form action="http://localhost:5000/api/insert/insertin" method="Get">
+        <button>Submit</button>
+      </form>
+    </div>
 
     <script>
       mapboxgl.accessToken =
@@ -96,7 +106,7 @@
         new MapboxDirections({
           accessToken: mapboxgl.accessToken
         }),
-        "top-left"
+        "bottom-left"
       );
 
       map.addControl(

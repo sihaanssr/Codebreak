@@ -7,9 +7,15 @@ const CoordinateSchema = new Schema({
     required: true
   },
   coordinates: {
-    type: SVGAnimatedInteger,
-    required: true
+    xcoordinate: {
+      type: Number,
+      required: true
+    },
+    ycoordinate: {
+      type: Number,
+      required: true
+    }
   }
 });
 
-module.exports = Coordinates = mongoose.model("coordiates", CoordinateSchema);
+module.exports = Coordinates = mongoose.model("coordinate", CoordinateSchema);
