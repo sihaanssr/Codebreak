@@ -23,6 +23,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/api/insert", require("./routes/api/insert"));
 app.use("/api/locate", require("./routes/api/locate"));
+app.use("/api/carpool", require("./routes/api/carpool"));
+app.use("/api/payment", require("./routes/api/payment"));
 app.set("views", path.join(__dirname, "views"));
 
 const PORT = process.env.PORT || 5000;
