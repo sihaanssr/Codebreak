@@ -6,7 +6,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mapbox": "^1.0.0-beta10",
     "mapbox-gl": "^1.6.1",
     "md5": "^2.2.1",
